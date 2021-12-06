@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘的blog</title>
-    <updated>2021-12-06T04:49:32.718Z</updated>
+    <updated>2021-12-06T04:52:05.350Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -16,60 +16,59 @@
         <link href="https://Ciao-hub.github.io/post/shu-mei-pai-pei-zhi-trojan/">
         </link>
         <updated>2021-12-06T04:41:03.000Z</updated>
-        <content type="html"><![CDATA[<hr>
-<h2 id="layout-posttitle-raspberrypidate-2021-12-01-080000categories-misctags-杂文cover-assetsimgsimg_7381jpglang-zhref-hello-world">layout: post<br>
-title:  &quot;RaspberryPi&quot;<br>
-date:   2021-12-01 08:00:00<br>
-categories: Misc<br>
-tags: 杂文<br>
-cover:  &quot;/assets/imgs/IMG_7381.jpg&quot;<br>
-lang: zh<br>
-ref: hello-world</h2>
-<h2 id="树莓派配置trojna">树莓派配置Trojna</h2>
-<ol>
+        <content type="html"><![CDATA[<ol>
 <li>下载trojan客户端</li>
 </ol>
-<p>wget https://github.com/sfantree/trojan-armv6/raw/master/trojan_1.14.1-git5074793_armhf.deb</p>
+<p><code>wget https://github.com/sfantree/trojan-armv6/raw/master/trojan_1.14.1-git5074793_armhf.deb</code></p>
 <ol start="2">
 <li>安装trojan</li>
 </ol>
-<p>dpkg -i trojan_1.14.1-git5074793_armhf.deb</p>
+<p><code>dpkg -i trojan_1.14.1-git5074793_armhf.deb</code></p>
 <ol start="3">
 <li>编辑配置文件</li>
 </ol>
-<p>vim /usr/local/etc/trojan/config.json</p>
+<p><code>vim /usr/local/etc/trojan/config.json</code></p>
 <ol start="4">
 <li>配置文件内容，编辑后保存退出</li>
 </ol>
-<p>{</p>
-<p>&quot;run_type&quot;: &quot;client&quot;,    #Trojan客户端类型</p>
-<p>&quot;local_addr&quot;: &quot;127.0.0.1&quot;,  #本地IP地址</p>
-<p>&quot;local_port&quot;: 5566,     #本地端口</p>
-<p>&quot;remote_addr&quot;: &quot;trojan.evergrowingsh.com&quot;,  #服务器地址</p>
-<p>&quot;remote_port&quot;: 443,              #服务器Trojan端口</p>
-<p>&quot;password&quot;: [                 #服务器Trojan密码</p>
-<p>​    &quot;Yunhe789&quot;</p>
-<p>],</p>
+<pre><code>{
+
+  &quot;run_type&quot;: &quot;client&quot;,    #Trojan客户端类型
+
+  &quot;local_addr&quot;: &quot;127.0.0.1&quot;,  #本地IP地址
+
+  &quot;local_port&quot;: 5566,     #本地端口
+
+  &quot;remote_addr&quot;: &quot;trojan.evergrowingsh.com&quot;,  #服务器地址
+
+  &quot;remote_port&quot;: 443,              #服务器Trojan端口
+
+  &quot;password&quot;: [                 #服务器Trojan密码
+
+​    &quot;Yunhe789&quot;
+
+],
+</code></pre>
 <ol start="5">
 <li>运行Trojan</li>
 </ol>
-<p>trojan     #运行后保持终端窗口开启</p>
+<p><code>trojan</code>     #运行后保持终端窗口开启</p>
 <ol start="6">
 <li>设置Trojan代理</li>
 </ol>
 <p>a)   下载代理软件</p>
-<p>apt-get install proxychains</p>
+<p><code>apt-get install proxychains</code></p>
 <p>b)   编辑配置文件</p>
-<p>vim /etc/proxychains.conf</p>
+<p><code>vim /etc/proxychains.conf</code></p>
 <p>c)   配置文件修改内容，编辑后保存退出</p>
 <p>#在最后的ProxyList注释默认的socks代理，socks4 前加#注释</p>
 <p>socks5 127.0.0.1 5566   # 在最后的ProxyList里加入Trojan的代理设置；5566为trojan本地端口号，与前面trojan配置文件里local_port一致</p>
 <p>d)   测试是否代理成功</p>
-<p>proxychains curl -4 ip.sb  #若显示服务器IP地址，则代理成功</p>
+<p><code>proxychains curl -4 ip.sb #若显示服务器IP地址，则代理成功</code></p>
 <ol start="7">
 <li>用Trojan代理运行Python爬虫</li>
 </ol>
-<p>proxychains python3 xxx.py</p>
+<p><code>proxychains python3 xxx.py</code></p>
 ]]></content>
     </entry>
     <entry>
