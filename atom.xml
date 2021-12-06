@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘的blog</title>
-    <updated>2021-12-06T06:03:24.012Z</updated>
+    <updated>2021-12-06T06:27:48.281Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -10,6 +10,76 @@
     <logo>https://Ciao-hub.github.io/images/avatar.png</logo>
     <icon>https://Ciao-hub.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 小刘的blog</rights>
+    <entry>
+        <title type="html"><![CDATA[树莓派配置Frp]]></title>
+        <id>https://Ciao-hub.github.io/post/shu-mei-pai-pei-zhi-frp/</id>
+        <link href="https://Ciao-hub.github.io/post/shu-mei-pai-pei-zhi-frp/">
+        </link>
+        <updated>2021-12-06T06:15:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>🤡  <strong>树莓派有手就行教程之配置Frp内网穿透</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>🤡  <strong>树莓派有手就行教程之配置Frp内网穿透</strong></p>
+<!-- more -->
+<h3 id="为什么需要内网穿透技术">为什么需要内网穿透技术👇</h3>
+<p>运营商因为IP地址短缺不给分配公网IP，如果想访问家里的树莓派、NAS等设备，只能借助第三方工具，常用的工具有蒲公英VPN软件、花生壳等，因为正好手里有一台搬瓦工服务器，所以借助开源frp工具实现内网穿透效果</p>
+<h3 id="frp是什么">Frp是什么👇</h3>
+<p>简单地说，frp就是一个反向代理软件，它体积轻量但功能很强大，可以使处于内网或防火墙后的设备对外界提供服务，它支持HTTP、TCP、UDP等众多协议。利用服务器进行转发，速度取决于网络环境，因为24小时在墙内外反复横跳，而且国内服务器带宽价格惊人，所以采用了国外服务器，速度大概在1 - 2M/s，基本满足使用。</p>
+<h3 id="配置教程">配置教程</h3>
+<ol>
+<li>
+<p>下载树莓派frp客户端<br>
+<code>wget https://github.com/fatedier/frp/releases/download/v0.36.2/frp_0.36.2_linux_arm.tar.gz</code><br>
+✏️  建议翻墙后，手动下载客户端</p>
+</li>
+<li>
+<p>解压<br>
+<code>tar xzvf frp_0.36.2_linux_arm.tar.gz</code></p>
+</li>
+<li>
+<p>修改文件夹名称为frp<br>
+<code>mv frp_0.36.2_linux_arm frp</code></p>
+</li>
+<li>
+<p>进入文件夹<br>
+<code>cd frp</code></p>
+</li>
+<li>
+<p>删除不需要的文件<br>
+<code>rm -f frps frps.ini</code></p>
+</li>
+<li>
+<p>编辑配置文件<br>
+<code>vim frpc.ini</code></p>
+</li>
+<li>
+<p>配置文件编写内容，编辑后保存退出</p>
+</li>
+</ol>
+<pre><code>[common]
+server_addr =           #服务器IP地址
+server_port =                  #服务器frp服务端口
+token =         #服务器frp服务token（类似于密码）
+
+[raspi_ssh]                    #穿透服务的名称（任意起）
+type = tcp                    #协议 默认tcp即可
+local_ip = 127.0.0.1           #本地IP地址
+local_port = 22               #本地SSH端口
+remote_port = 7500          #远程端口（即服务器IP+端口进行访问本地服务）
+</code></pre>
+<ol start="8">
+<li>运行frp服务<br>
+<code>./frpc -c ./frpc.ini #运行后保持终端窗口开启</code></li>
+<li>设置开机自启frp服务<br>
+a)	编辑配置文件<br>
+<code>vim /etc/rc.local</code><br>
+b)	配置文件编辑内容，编辑后保存退出<pre><code>#在exit0前面添加一段
+/bin/sleep 60
+sudo /root/frp/frpc -c /root/frp/frpc.ini &amp;    #开机后1分钟运行frp服务
+</code></pre>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[树莓派配置Trojan]]></title>
         <id>https://Ciao-hub.github.io/post/shu-mei-pai-pei-zhi-trojan/</id>
