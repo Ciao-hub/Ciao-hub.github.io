@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘的blog</title>
-    <updated>2021-12-06T06:31:56.778Z</updated>
+    <updated>2021-12-06T06:47:51.195Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -16,15 +16,15 @@
         <link href="https://Ciao-hub.github.io/post/shu-mei-pai-pei-zhi-frp/">
         </link>
         <updated>2021-12-06T06:15:42.000Z</updated>
-        <summary type="html"><![CDATA[<p>🤡  <strong>树莓派有手就行教程之配置Frp内网穿透</strong></p>
+        <summary type="html"><![CDATA[<p>🤡  <strong>树莓派有手就行教程之配置Frp</strong></p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>🤡  <strong>树莓派有手就行教程之配置Frp内网穿透</strong></p>
+        <content type="html"><![CDATA[<p>🤡  <strong>树莓派有手就行教程之配置Frp</strong></p>
 <!-- more -->
-<h3 id="为什么需要内网穿透技术">为什么需要内网穿透技术👇</h3>
+<h2 id="为什么需要内网穿透技术">为什么需要内网穿透技术👇</h2>
 <p>运营商因为IP地址短缺不给分配公网IP，如果想访问家里的树莓派、NAS等设备，只能借助第三方工具，常用的工具有蒲公英VPN软件、花生壳等，因为正好手里有一台搬瓦工服务器，所以借助开源frp工具实现内网穿透效果</p>
-<h3 id="frp是什么">Frp是什么👇</h3>
+<h2 id="frp是什么">Frp是什么👇</h2>
 <p>简单地说，frp就是一个反向代理软件，它体积轻量但功能很强大，可以使处于内网或防火墙后的设备对外界提供服务，它支持HTTP、TCP、UDP等众多协议。利用服务器进行转发，速度取决于网络环境，因为我本人24小时在墙内外反复横跳，而且国内服务器带宽价格惊人，所以采用了国外服务器，速度大概在1 - 2M/s，基本满足使用。</p>
-<h3 id="配置教程">配置教程</h3>
+<h2 id="配置教程">配置教程</h2>
 <ol>
 <li>
 <p>下载树莓派frp客户端<br>
@@ -94,6 +94,7 @@ sudo /root/frp/frpc -c /root/frp/frpc.ini &amp;    #开机后1分钟运行frp服
 <p>树莓派基于Arm处理器，可用的翻墙软件比X86的要少很多，如果家里有软路由可以不用折腾，这是我自己摸索出来的基于Trojan协议的翻墙教程，需提前配置好root账户、SSH以及VNC</p>
 </blockquote>
 <figure data-type="image" tabindex="1"><img src="https://Ciao-hub.github.io/post-images/1638767071361.png" alt="" loading="lazy"></figure>
+<h2 id="配置教程">配置教程</h2>
 <ol>
 <li>下载trojan客户端</li>
 </ol>
