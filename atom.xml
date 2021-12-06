@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘的blog</title>
-    <updated>2021-12-06T13:53:05.157Z</updated>
+    <updated>2021-12-06T14:00:34.322Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -26,7 +26,14 @@
 <figure data-type="image" tabindex="1"><img src="https://Ciao-hub.github.io/post-images/1638796473635.png" alt="" loading="lazy"></figure>
 <h2 id="订阅转换配置文件格式">订阅转换配置文件格式</h2>
 <p>下面是自用订阅转换配置文件，地址：https://raw.githubusercontent.com/Ciao-hub/Clash/main/Chop_Clash.ini<br>
-可以参考 ACL4SSR大佬的默认配置文件，配置在<code>/Clash/config</code>目录下</p>
+实现效果：</p>
+<ul>
+<li>去广告</li>
+<li>Steam、EPIC游戏平台分流</li>
+<li>Netlix分流</li>
+<li>自用EMBY分流规则，包括CharonTV、猫熊等EMBY</li>
+</ul>
+<p>📌  可以参考 ACL4SSR大佬的默认配置文件，配置在<code>/Clash/config</code>目录下</p>
 <p>✏️  ACL4SSR大佬仓库地址：https://github.com/ACL4SSR/ACL4SSR/tree/master</p>
 <pre><code>[custom]
 
