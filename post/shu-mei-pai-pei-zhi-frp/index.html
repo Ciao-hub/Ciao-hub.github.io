@@ -6,7 +6,7 @@
 
 <title>树莓派配置Frp | 小刘的blog</title>
 
-<link rel="shortcut icon" href="https://Ciao-hub.github.io/favicon.ico?v=1638799676596">
+<link rel="shortcut icon" href="https://Ciao-hub.github.io/favicon.ico?v=1638801047140">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://Ciao-hub.github.io/styles/main.css">
@@ -89,7 +89,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1638799676596" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1638801047140" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -117,9 +117,9 @@
                     <p>🤡  <strong>树莓派有手就行教程之配置Frp</strong></p>
 <!-- more -->
 <p>🈲  不建议无Linux基础的采用本教程！！至少可以看懂我的每一步的目的</p>
-<h2 id="为什么需要内网穿透技术">为什么需要内网穿透技术👇</h2>
+<h2 id="为什么需要内网穿透技术">为什么需要内网穿透技术 👇</h2>
 <p>运营商因为IP地址短缺不给分配公网IP，如果想访问家里的树莓派、NAS等设备，只能借助第三方工具，常用的工具有蒲公英VPN软件、花生壳等，因为正好手里有一台搬瓦工服务器，所以借助开源frp工具实现内网穿透效果</p>
-<h2 id="frp是什么">Frp是什么👇</h2>
+<h2 id="frp是什么">Frp是什么 👇</h2>
 <p>简单地说，Frp就是一个反向代理软件，它体积轻量但功能很强大，可以使处于内网或防火墙后的设备对外界提供服务，它支持HTTP、TCP、UDP等众多协议（是不是听不懂，听不懂就对了，因为我也不懂，不懂就去Google）。本质是利用服务器进行转发，速度取决于网络环境，因为我本人24小时在墙内外反复横跳，而且国内服务器带宽价格惊人，所以采用了国外服务器，速度大概在1 - 2M/s，基本满足使用。</p>
 <h2 id="配置教程">配置教程</h2>
 <ol>
