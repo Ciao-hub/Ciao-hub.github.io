@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘的blog</title>
-    <updated>2021-12-06T05:17:34.835Z</updated>
+    <updated>2021-12-06T05:20:20.612Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -43,13 +43,13 @@
 
   &quot;local_port&quot;: 5566,     #本地端口
 
-  &quot;remote_addr&quot;: &quot;trojan.evergrowingsh.com&quot;,  #服务器地址
+  &quot;remote_addr&quot;: &quot;&lt;server address&gt;&quot;,  #服务器地址
 
   &quot;remote_port&quot;: 443,              #服务器Trojan端口
 
   &quot;password&quot;: [                 #服务器Trojan密码
 
-​    &quot;Yunhe789&quot;
+​    &quot;&lt;passwd&gt;&quot;
 
 ],
 </code></pre>
