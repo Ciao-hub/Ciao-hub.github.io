@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘的blog</title>
-    <updated>2021-12-06T05:04:37.276Z</updated>
+    <updated>2021-12-06T05:06:53.930Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -17,6 +17,9 @@
         </link>
         <updated>2021-12-06T04:41:03.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://Ciao-hub.github.io/post-images/1638767071361.png" alt="" loading="lazy"></figure>
+<blockquote>
+<p>树莓派基于Arm处理器，可用的翻墙软件比X86的要少很多，这是我自己摸索出来的基于Trojan协议的翻墙教程</p>
+</blockquote>
 <ol>
 <li>下载trojan客户端</li>
 </ol>
