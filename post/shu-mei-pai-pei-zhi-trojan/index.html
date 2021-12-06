@@ -6,7 +6,7 @@
 
 <title>树莓派配置Trojan | 小刘的blog</title>
 
-<link rel="shortcut icon" href="https://Ciao-hub.github.io/favicon.ico?v=1638769597111">
+<link rel="shortcut icon" href="https://Ciao-hub.github.io/favicon.ico?v=1638769674883">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://Ciao-hub.github.io/styles/main.css">
@@ -77,7 +77,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1638769597111" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1638769674883" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -147,8 +147,8 @@
 </ol>
 <p><code>trojan</code>     #运行后保持终端窗口开启</p>
 <ol start="6">
-<li>设置Trojan代理</li>
-</ol>
+<li>
+<p>设置Trojan代理</p>
 <p>a)   下载代理软件</p>
 <p><code>apt-get install proxychains</code></p>
 <p>b)   编辑配置文件</p>
@@ -160,8 +160,10 @@ socks5 127.0.0.1 5566   # 在最后的ProxyList里加入Trojan的代理设置；
 </code></pre>
 <p>d)   测试是否代理成功</p>
 <p><code>proxychains curl -4 ip.sb #若显示服务器IP地址，则代理成功</code></p>
-<ol start="7">
-<li>用Trojan代理运行Python爬虫</li>
+</li>
+<li>
+<p>用Trojan代理运行Python爬虫</p>
+</li>
 </ol>
 <p><code>proxychains python3 xxx.py</code></p>
 
