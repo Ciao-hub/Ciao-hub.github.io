@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘的blog</title>
-    <updated>2021-12-06T05:01:26.653Z</updated>
+    <updated>2021-12-06T05:01:50.706Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -61,8 +61,10 @@
 <p>b)   编辑配置文件</p>
 <p><code>vim /etc/proxychains.conf</code></p>
 <p>c)   配置文件修改内容，编辑后保存退出</p>
-<p>#在最后的ProxyList注释默认的socks代理，socks4 前加#注释</p>
-<p>socks5 127.0.0.1 5566   # 在最后的ProxyList里加入Trojan的代理设置；5566为trojan本地端口号，与前面trojan配置文件里local_port一致</p>
+<pre><code>\#在最后的ProxyList注释默认的socks代理，socks4 前加#注释
+
+socks5 127.0.0.1 5566   # 在最后的ProxyList里加入Trojan的代理设置；5566为trojan本地端口号，与前面trojan配置文件里local_port一致
+</code></pre>
 <p>d)   测试是否代理成功</p>
 <p><code>proxychains curl -4 ip.sb #若显示服务器IP地址，则代理成功</code></p>
 <ol start="7">
