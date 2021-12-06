@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘的blog</title>
-    <updated>2021-12-06T05:43:21.922Z</updated>
+    <updated>2021-12-06T05:46:39.134Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -21,13 +21,14 @@
         <content type="html"><![CDATA[<p>👏  <strong>树莓派有手就行教程之配置Trojan</strong></p>
 <!-- more -->
 <blockquote>
-<p>树莓派基于Arm处理器，可用的翻墙软件比X86的要少很多，这是我自己摸索出来的基于Trojan协议的翻墙教程</p>
+<p>树莓派基于Arm处理器，可用的翻墙软件比X86的要少很多，这是我自己摸索出来的基于Trojan协议的翻墙教程，需提前配置好root账户、SSH以及VNC</p>
 </blockquote>
 <figure data-type="image" tabindex="1"><img src="https://Ciao-hub.github.io/post-images/1638767071361.png" alt="" loading="lazy"></figure>
 <ol>
 <li>下载trojan客户端</li>
 </ol>
 <p><code>wget https://github.com/sfantree/trojan-armv6/raw/master/trojan_1.14.1-git5074793_armhf.deb</code></p>
+<p>✏️  国内Github访问不稳定，如果不能下载，建议把安装包用xftp工具或者VNC传到树莓派/home目录下</p>
 <ol start="2">
 <li>安装trojan</li>
 </ol>
