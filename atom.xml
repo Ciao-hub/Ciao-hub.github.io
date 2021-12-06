@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://Ciao-hub.github.io</id>
+    <title>小刘的blog</title>
+    <updated>2021-12-06T04:45:20.361Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://Ciao-hub.github.io"/>
+    <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
+    <subtitle>社交废物 |  折腾日志 | 生活琐事</subtitle>
+    <logo>https://Ciao-hub.github.io/images/avatar.png</logo>
+    <icon>https://Ciao-hub.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, 小刘的blog</rights>
+    <entry>
+        <title type="html"><![CDATA[树莓派配置Trojan]]></title>
+        <id>https://Ciao-hub.github.io/post/shu-mei-pai-pei-zhi-trojan/</id>
+        <link href="https://Ciao-hub.github.io/post/shu-mei-pai-pei-zhi-trojan/">
+        </link>
+        <updated>2021-12-06T04:41:03.000Z</updated>
+        <content type="html"><![CDATA[<hr>
+<h2 id="layout-posttitle-raspberrypidate-2021-12-01-080000categories-misctags-杂文cover-assetsimgsimg_7381jpglang-zhref-hello-world">layout: post<br>
+title:  &quot;RaspberryPi&quot;<br>
+date:   2021-12-01 08:00:00<br>
+categories: Misc<br>
+tags: 杂文<br>
+cover:  &quot;/assets/imgs/IMG_7381.jpg&quot;<br>
+lang: zh<br>
+ref: hello-world</h2>
+<h2 id="树莓派配置trojna">树莓派配置Trojna</h2>
+<ol>
+<li>下载trojan客户端</li>
+</ol>
+<p>wget https://github.com/sfantree/trojan-armv6/raw/master/trojan_1.14.1-git5074793_armhf.deb</p>
+<ol start="2">
+<li>安装trojan</li>
+</ol>
+<p>dpkg -i trojan_1.14.1-git5074793_armhf.deb</p>
+<ol start="3">
+<li>编辑配置文件</li>
+</ol>
+<p>vim /usr/local/etc/trojan/config.json</p>
+<ol start="4">
+<li>配置文件内容，编辑后保存退出</li>
+</ol>
+<p>{</p>
+<p>&quot;run_type&quot;: &quot;client&quot;,    #Trojan客户端类型</p>
+<p>&quot;local_addr&quot;: &quot;127.0.0.1&quot;,  #本地IP地址</p>
+<p>&quot;local_port&quot;: 5566,     #本地端口</p>
+<p>&quot;remote_addr&quot;: &quot;trojan.evergrowingsh.com&quot;,  #服务器地址</p>
+<p>&quot;remote_port&quot;: 443,              #服务器Trojan端口</p>
+<p>&quot;password&quot;: [                 #服务器Trojan密码</p>
+<p>​    &quot;Yunhe789&quot;</p>
+<p>],</p>
+<ol start="5">
+<li>运行Trojan</li>
+</ol>
+<p>trojan     #运行后保持终端窗口开启</p>
+<ol start="6">
+<li>设置Trojan代理</li>
+</ol>
+<p>a)   下载代理软件</p>
+<p>apt-get install proxychains</p>
+<p>b)   编辑配置文件</p>
+<p>vim /etc/proxychains.conf</p>
+<p>c)   配置文件修改内容，编辑后保存退出</p>
+<p>#在最后的ProxyList注释默认的socks代理，socks4 前加#注释</p>
+<p>socks5 127.0.0.1 5566   # 在最后的ProxyList里加入Trojan的代理设置；5566为trojan本地端口号，与前面trojan配置文件里local_port一致</p>
+<p>d)   测试是否代理成功</p>
+<p>proxychains curl -4 ip.sb  #若显示服务器IP地址，则代理成功</p>
+<ol start="7">
+<li>用Trojan代理运行Python爬虫</li>
+</ol>
+<p>proxychains python3 xxx.py</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://Ciao-hub.github.io/post/hello-gridea/</id>
+        <link href="https://Ciao-hub.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
