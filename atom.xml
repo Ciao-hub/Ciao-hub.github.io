@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘的blog</title>
-    <updated>2021-12-06T14:00:34.322Z</updated>
+    <updated>2021-12-06T14:04:14.023Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -89,7 +89,7 @@ overwrite_original_rules=true
 <p><strong>ruleset</strong></p>
 <ul>
 <li>&quot;=&quot;后面内容为策略组对应的分流规则，策略组可对应多个分流规则。EMBY规则是我自己在维护，如果有相加的规则，可以私信我</li>
-<li>规则：如果两个规则冲突，先匹配位于前面的规则，例如：我想Youtube单独分流，需要把Youtube的规则放在<code>国外媒体</code>规则前面</li>
+<li>规则：如果两个规则冲突，先匹配位于前面的规则，例如：我想Youtube单独分流，需要把<code>Youtube</code>的规则放在<code>国外媒体</code>规则前面</li>
 <li>规则地址：可参照ACL4SSR大佬维护的分流<code>.list</code>文件，或者自己写一份list文件，然后上传Github个人仓库</li>
 </ul>
 <p><strong>custom_proxy_group</strong></p>
@@ -104,7 +104,7 @@ overwrite_original_rules=true
 <h2 id="使用方式">使用方式</h2>
 <p><strong>✏️访问ACL4SSR在线订阅网站：https://acl4ssr-sub.github.io/</strong><br>
 <img src="https://Ciao-hub.github.io/post-images/1638798127671.jpg" alt="" loading="lazy"><br>
-在<code>远程配置</code>出贴上自己的Github上的配置文件地址，注意选择<strong>RAW</strong>格式，其他的默认就行</p>
+在<code>远程配置</code>出贴上自己的Github上的配置文件地址，注意在Github里选择<strong>RAW</strong>格式文件链接，其他的默认就行</p>
 ]]></content>
     </entry>
     <entry>
