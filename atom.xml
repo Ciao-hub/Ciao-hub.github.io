@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
-    <title>小刘的blog</title>
-    <updated>2021-12-06T14:41:52.572Z</updated>
+    <title>小刘不务正业的日常</title>
+    <updated>2021-12-06T14:43:59.269Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
     <subtitle>社交废物 |  折腾日志 | 生活琐事</subtitle>
     <logo>https://Ciao-hub.github.io/images/avatar.png</logo>
     <icon>https://Ciao-hub.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, 小刘的blog</rights>
+    <rights>All rights reserved 2021, 小刘不务正业的日常</rights>
     <entry>
         <title type="html"><![CDATA[Clash自定义订阅转换]]></title>
         <id>https://Ciao-hub.github.io/post/clash-zi-ding-yi-ding-yue-zhuan-huan/</id>
@@ -268,9 +268,9 @@ socks5 127.0.0.1 5566
 ✍️  基于<strong>Gridea</strong> 一个静态博客写作客户端打造。用来记录无聊的人生</p>
 <!-- more -->
 <figure data-type="image" tabindex="1"><img src="https://Ciao-hub.github.io/post-images/1638801578509.jpg" alt="" loading="lazy"></figure>
-<h2 id="缘由️">缘由✏️</h2>
+<h2 id="缘由-️">缘由 ✏️</h2>
 <p>前几天突然想找个东西来记录下自己无聊的生活，本着炫酷一点的想法，最终选择了个人博客。然后开始找教程，本来想用Wordpress，便宜点的国外服务器一年要好几百，想一想算了，最后选择了一个免费的Github Pages。不停的删库建库之后，终于建立起来了第一个人博客。后面可能会不更新，也可能再买服务器升级，毕竟花了12块钱买了这个域名，不能浪费！</p>
-<h2 id="内容">内容🔖</h2>
+<h2 id="内容">内容 🔖</h2>
 <p>😛 折腾日志：主要是一些奇奇怪怪的软件教程，作为一个工具党，使用过的大大小小软件无数，然后不停的筛选，筛选后还要DIY各项配置，让工具更顺手，也当做自己的一个备份教程吧</p>
 <p>👺 生活琐事：毕竟生活很无趣，但是无趣中总会有一些美好日常，可能更新的不多，怕自己更新后物是人非</p>
 <p>😏 奇技淫巧：别误会别误会别误会！！！主要是一些软件的特殊玩法，曾经为了把一个小米路由器刷机，折腾了快一星期，遇见了无数问题，最后索然无味，然后卖掉，果然折腾的尽头是默认</p>
