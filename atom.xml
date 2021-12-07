@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘の不务正业</title>
-    <updated>2021-12-07T04:01:37.294Z</updated>
+    <updated>2021-12-07T11:25:51.704Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -21,13 +21,13 @@
         <content type="html"><![CDATA[<p>👻  简简单单C盘清理教程</p>
 <!-- more -->
 <blockquote>
-<p>手头笔记本是服役5年的暗影精灵2，现在依旧坚挺，但是128G的C盘总是莫名其妙的爆满，最后提示空间不足，所以自己找了很多方式来清理C盘，这篇文章主要是对自己用过的方法进行总结。</p>
+<p>手头笔记本是服役5年的暗影精灵2，现在依旧坚挺，但是128G的C盘总是莫名其妙的爆满，最后提示空间不足，所以自己找了很多方式来清理C盘，这篇文章主要是对自己用过的方法进行总结。怕自己博客里的文章都太阴间了，以后多写一些适合大众的的内容。</p>
 </blockquote>
 <figure data-type="image" tabindex="1"><img src="https://Ciao-hub.github.io/post-images/1638842248334.jpg" alt="" loading="lazy"></figure>
-<h2 id="小白基础教程">小白基础教程</h2>
-<h3 id="垃圾清理">垃圾清理</h3>
+<h1 id="小白基础教程">小白基础教程</h1>
+<h2 id="垃圾清理">垃圾清理</h2>
 <p>💻  软件：Dism++<br>
-❌  请远离360等电脑管家，后面我会出一期常用软件推荐，可以关注下<br>
+❌  尽量远离360等电脑管家，后面我会出一期常用软件推荐，可以关注下<br>
 ✏️  下载链接：https://t00y.com/file/17786953-459201515<br>
 📌  请先<code>解压</code>再运行文件，如果不明白解压啥意思，请百度<br>
 📌  下载完成后打开<code>Dism++x86.exe</code>，如果知道自己的系统是64位的，请选择<code>Dism++x64.exe</code></p>
@@ -41,6 +41,23 @@
 <li>依次点击<code>扫描</code>、<code>清理</code>即可<br>
 <img src="https://Ciao-hub.github.io/post-images/1638849037847.jpg" alt="" loading="lazy"></li>
 </ol>
+<h2 id="软件迁移">软件迁移</h2>
+<p>小白C盘满的主要原因<br>
+<strong>安装软件时默认安装位置通常是<code>C盘</code>，小白如果不注意，各种大型软件全部在C盘，导致C盘空间不足</strong></p>
+<p>以<code>百度网盘</code>举例，千万不要选择<code>极速安装</code>，各种坑<br>
+<img src="https://Ciao-hub.github.io/post-images/1638850158672.jpg" alt="" loading="lazy"><br>
+默认的安装路径为C盘用户目录下的AppData，把安装位置改成D盘即可，建议是D盘下新建一个目录，用来存放安装的软件，本人安装目录为<code>D:\\Program Files</code>，强烈建议安装目录路径不能有<strong>中文</strong>，否则很多软件会出错！！</p>
+<p><strong>对于已经安装好的应用，建议<code>卸载</code>重装或者使用腾讯电脑管家的<code>软件搬家</code>功能进行迁移</strong></p>
+<h2 id="微信-qq等缓存迁移">微信、QQ等缓存迁移</h2>
+<h3 id="微信">微信👇</h3>
+<p>号称小而美的微信，不管是手机还是电脑都占据很大的存储空间，每次都想问候张小🐲<br>
+电脑打开<code>微信</code>，点击<code>设置</code>，把 <code>文件管理</code>改成D盘或者E盘，我电脑上的微信文件缓存已经17.8G了😅<br>
+<img src="https://Ciao-hub.github.io/post-images/1638875889966.jpg" alt="" loading="lazy"></p>
+<h3 id="qq">QQ👇</h3>
+<p>同理<br>
+我们进入QQ设置，把<code>文件管理</code>改成D盘或者E盘即可<br>
+<img src="https://Ciao-hub.github.io/post-images/1638876156131.jpg" alt="" loading="lazy"></p>
+<h1 id="进阶教程">进阶教程</h1>
 ]]></content>
     </entry>
     <entry>
