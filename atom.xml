@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘の不务正业</title>
-    <updated>2021-12-07T11:49:50.233Z</updated>
+    <updated>2021-12-07T11:52:35.615Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -44,7 +44,7 @@
 </ol>
 <h2 id="自带的清理工具">自带的清理工具</h2>
 <p>选中C盘，<code>右键</code>-<code>属性</code>-<code>常规</code> - <code>磁盘清理</code> - <code>清理系统文件</code>，扫描完成后，勾选其中比较大的几项，点击<code>确定</code>即可<br>
-<img src="https://Ciao-hub.github.io/post-images/1638877584276.jpg" alt="" loading="lazy">`</p>
+<img src="https://Ciao-hub.github.io/post-images/1638877584276.jpg" alt="" loading="lazy"></p>
 <h2 id="软件迁移">软件迁移</h2>
 <p>小白C盘满的主要原因<br>
 <strong>安装软件时默认安装位置通常是<code>C盘</code>，小白如果不注意，各种大型软件全部在C盘，导致C盘空间不足</strong></p>
