@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘の不务正业</title>
-    <updated>2021-12-06T14:57:05.768Z</updated>
+    <updated>2021-12-07T01:33:35.522Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -88,9 +88,9 @@ overwrite_original_rules=true
 <h3 id="配置文件主要有两部分组成">配置文件主要有两部分组成：</h3>
 <p><strong>ruleset</strong></p>
 <ul>
-<li>&quot;=&quot;后面内容为策略组对应的分流规则，策略组可对应多个分流规则。EMBY规则是我自己在维护，如果有相加的规则，可以私信我</li>
-<li>规则：如果两个规则冲突，先匹配位于前面的规则，例如：我想Youtube单独分流，需要把<code>Youtube</code>的规则放在<code>国外媒体</code>规则前面</li>
-<li>规则地址：可参照ACL4SSR大佬维护的分流<code>.list</code>文件，或者自己写一份list文件，然后上传Github个人仓库</li>
+<li>&quot;=&quot;后面内容为策略组对应的分流规则，策略组可对应多个分流规则。EMBY规则是我自己在维护，如果有想加的规则，可以私信我。</li>
+<li>规则：如果两个规则冲突，先匹配位于前面的规则，例如：我想Youtube单独分流，需要把<code>Youtube</code>的规则放在<code>国外媒体</code>规则前面。</li>
+<li>可参照ACL4SSR大佬仓库中的分流规则，在<code>/Clash</code>目录下，后缀名为<code>.list</code></li>
 </ul>
 <p><strong>custom_proxy_group</strong></p>
 <ul>
