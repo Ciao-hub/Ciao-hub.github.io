@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘の不务正业</title>
-    <updated>2021-12-07T01:37:55.873Z</updated>
+    <updated>2021-12-07T01:41:39.618Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -21,7 +21,7 @@
         <content type="html"><![CDATA[<p>🚀  <strong>翻墙教程之Clash</strong></p>
 <!-- more -->
 <blockquote>
-<p>介于机场提供的默认Clash订阅分组不全或者用不到的东西太多，后面一直用ACL4SSR大佬的默认订阅转换，但是后面因为自己开始捣鼓EMBY，需要一个EMBY分流策略，找了好久才找到教程，才发现其实很简单，下面是教程。</p>
+<p>机场提供的默认Clash订阅分组不全或者用不到的东西太多，后面一直用ACL4SSR大佬的默认订阅转换，但是后面因为自己开始捣鼓EMBY，需要一个EMBY分流策略，找了好久才找到教程，才发现其实很简单，下面是教程。</p>
 </blockquote>
 <figure data-type="image" tabindex="1"><img src="https://Ciao-hub.github.io/post-images/1638796473635.png" alt="" loading="lazy"></figure>
 <h2 id="订阅转换配置文件格式">订阅转换配置文件格式</h2>
@@ -104,7 +104,7 @@ overwrite_original_rules=true
 <h2 id="使用方式">使用方式</h2>
 <p><strong>✏️  访问ACL4SSR在线订阅网站：https://acl4ssr-sub.github.io/</strong><br>
 <img src="https://Ciao-hub.github.io/post-images/1638798127671.jpg" alt="" loading="lazy"><br>
-在<code>远程配置</code>出贴上自己的Github上的配置文件地址，注意在Github里选择<strong>RAW</strong>格式文件链接，其他的默认就行</p>
+在<code>远程配置</code>出贴上自己的Github上的配置文件地址，注意在Github里选择<strong>RAW</strong>格式文件链接，其他的按照自己需求填写</p>
 ]]></content>
     </entry>
     <entry>
@@ -271,7 +271,7 @@ socks5 127.0.0.1 5566
 <h2 id="缘由-️">缘由 ✏️</h2>
 <p>前几天突然想找个东西来记录下自己无聊的生活，本着炫酷一点的想法，最终选择了个人博客。然后开始找教程，本来想用Wordpress，结果便宜点的国外服务器一年要好几百，想一想算了，最后选择了免费的Github Pages。不停的删库建库之后，终于建立起来了第一个人博客。后面可能会不更新，也可能再买服务器升级。但是毕竟花了12块钱买了这个域名，不能轻易浪费！</p>
 <h2 id="内容">内容 🔖</h2>
-<p>😛 折腾日志：主要是一些奇奇怪怪的软件教程，作为一个工具党，使用过的大大小小软件无数，然后不停的筛选，筛选后还要DIY各项配置，让工具更顺手，也当做自己的一个备份教程吧。</p>
+<p>😛 折腾日志：主要是一些奇奇怪怪的软件教程，作为一个工具党，使用过的大大小小软件无数，然后不停的筛选，筛选后还要研究DIY各项配置，让工具更顺手，也当做自己的一个备份教程吧。</p>
 <p>👺 生活琐事：毕竟生活很无趣，但是无趣中总会有一些美好日常，可能更新的不多，怕自己更新后物是人非。</p>
 <p>😏 奇技淫巧：主要是一些软件的特殊玩法，曾经为了把一个小米路由器刷机，折腾了快一星期，遇见了无数问题，最后索然无味，然后卖掉，果然折腾的尽头是默认。</p>
 ]]></content>
