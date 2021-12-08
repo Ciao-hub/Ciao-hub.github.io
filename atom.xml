@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ciao-hub.github.io</id>
     <title>小刘の不务正业</title>
-    <updated>2021-12-08T06:02:24.907Z</updated>
+    <updated>2021-12-08T14:51:24.675Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ciao-hub.github.io"/>
     <link rel="self" href="https://Ciao-hub.github.io/atom.xml"/>
@@ -62,7 +62,16 @@
 <p>同理，我们进入QQ设置，把<code>文件管理</code>改成D盘或者E盘即可<br>
 <img src="https://Ciao-hub.github.io/post-images/1638876156131.jpg" alt="" loading="lazy"></p>
 <h1 id="进阶教程">进阶教程</h1>
-<p>进阶教程东西比较多，我后面还会继续整理，如果上面的教程还是清理不出来空间，建议关注下进阶教程！</p>
+<p>不适合纯小白，虽然按照教程一步一步的来，也能做到，但是按照我自己找教程的经验来说，教程总归和实际有出入，还会遇到很多问题，所以建议爱折腾的来搞</p>
+<h2 id="休眠文件清理">休眠文件清理</h2>
+<p><code>休眠文件</code>（hiberfil.sys），是当电脑进入休眠状态时，系统将关闭前的将所有内存内容写入hiberfil.sys文件。当你重新打开电脑时，系统会将hiberfil.sys文件内的所有信息倒回内存，使电脑恢复到休眠前状态。但是，电脑重新启动打开后，系统不会删除hiberfil.sys文件，而hiberfil.sys文件的大小和内存大小挂钩，我电脑12G的内存，休眠文件大小为5.8G左右。</p>
+<p>⭐️  关闭方式：</p>
+<ol>
+<li>首先我们在<code>菜单</code>，找到<code>Windows系统</code>，点开可以看到<code>命令提示符</code>，<code>右键</code>选择<code>管理员身份运行</code><br>
+<img src="https://Ciao-hub.github.io/post-images/1638973659659.jpg" alt="" loading="lazy"></li>
+<li>输入<code>powercfg -h off</code>，回车即可<br>
+<img src="https://Ciao-hub.github.io/post-images/1638973730222.jpg" alt="" loading="lazy"></li>
+</ol>
 ]]></content>
     </entry>
     <entry>
